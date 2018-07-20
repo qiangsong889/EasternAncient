@@ -1,5 +1,10 @@
 import React from 'react';
 import axios from 'axios';
+import './style.css';
+import Video from '../videoComponent/index';
+import Nav from '../navbarComponent';
+import Content from '../contentComponent';
+
 class Main extends React.Component {
   constructor() {
     super();
@@ -20,8 +25,9 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        hellor from main page
-        <button onClick={() => this.handleClick()}>click</button>
+        <Nav />
+        <Video />
+        <Content />
       </div>
     );
   }

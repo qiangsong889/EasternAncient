@@ -1,0 +1,28 @@
+/* #navbar-container {
+  height: 80px;
+  width: 100%;
+
+} */
+
+.bg-custom {
+  background-color: rgb(19, 15, 15);
+}
+
+.nav-item {
+  /* float: right; */
+}
+.navbar-nav {
+  /* float: right; */
+}
+.nav-link {
+  font-size: 1.2rem;
+  margin: 0.8rem;
+}
+
+/* .navbar {
+  background-color: black;
+} */
+.pd {
+  margin-left: 5%;
+  margin-right: 5%;
+}
