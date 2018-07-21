@@ -1,9 +1,11 @@
 import React from 'react';
 import './style.css';
 import $ from 'jquery';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 class Nav extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
   }
   handleContentClick(event) {
     var target = $(event.target.getAttribute('href'));
@@ -18,6 +20,11 @@ class Nav extends React.Component {
           1000
         );
     }
+  }
+  direct(event) {
+    //i dont need this run history push, href will do the same thing
+    // console.log(event.target);
+    // this.props.history.push(event.target.getAttribute('href'));
   }
   render() {
     return (
@@ -39,8 +46,8 @@ class Nav extends React.Component {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto pd">
-            <li className="nav-item active">
-              <a className="nav-link" href="">
+            <li className="nav-item ">
+              <a className="nav-link" href="/">
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
@@ -53,34 +60,9 @@ class Nav extends React.Component {
                 Content
               </a>
             </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">
-                  Action
-                </a>
-                <a className="dropdown-item" href="#">
-                  Another action
-                </a>
-                <div className="dropdown-divider" />
-                <a className="dropdown-item" href="#">
-                  Something else here
-                </a>
-              </div>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link disabled" href="#">
-                Disabled
+            <li>
+              <a href="/contact" className="nav-link">
+                Find Us
               </a>
             </li>
           </ul>
