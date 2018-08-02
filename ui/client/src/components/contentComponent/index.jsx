@@ -2,8 +2,6 @@ import React from 'react';
 import './style.css';
 import $ from 'jquery';
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import Test from '../testComponent';
-import { Test1, Test3, Test4 } from '../testComponent';
 import image1 from './01.svg';
 import image2 from './02.svg';
 import image3 from './03.svg';
