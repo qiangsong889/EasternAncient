@@ -1,7 +1,19 @@
 #contact {
-  background-color: black;
+  /* background-color: rgb(60, 171, 77); */
   margin: 10% 10%;
   width: 80vw;
   height: 80vh;
-  border: 3px solid red;
+  /* border: 3px solid red; */
+  /* display: inline-block; */
+}
+#map {
+  float: right;
+  height: 45vh;
+  width: 45vw;
+  display: inline-block;
+}
+
+#header-content {
+  width: 30vw;
+  display: inline-block;
 }

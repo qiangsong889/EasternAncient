@@ -1,0 +1,37 @@
+#prices {
+  padding-top: 15%;
+}
+.price-list h5 {
+  height: 3rem;
+}
+.price-list {
+  width: 17%;
+  height: 50%;
+  /* padding: 40px; */
+  margin: 4%;
+  padding-top: 2.5%;
+  float: left;
+  text-align: center;
+  /* text flowing out of div */
+  overflow-wrap: break-word;
+  letter-spacing: 2.2px;
+  -webkit-text-size-adjust: none;
+  border-radius: 10px;
+  /* -webkit-box-shadow: 0px 0px 5px 6px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0px 0px 5px 6px rgba(194, 194, 194, 1);
+  box-shadow: 0px 0px 5px 6px rgba(194, 194, 194, 1); */
+}
+/* @media screen and (max-width: 954px) {
+  .price-list {
+    width: 50%;
+  }
+} */
+.price-list p {
+  letter-spacing: 1.5px;
+  padding-top: 2%;
+}
+@media screen and (max-width: 1024px) {
+  .price-list {
+    width: 100%;
+  }
+}

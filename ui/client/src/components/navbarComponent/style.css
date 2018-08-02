@@ -5,11 +5,14 @@
 } */
 
 .bg-custom {
-  background-color: rgb(19, 15, 15);
+  background-color: rgb(229, 242, 252);
+  opacity: 0.8;
 }
 
 .nav-item {
   /* float: right; */
+  /* font-family: 'Great Vibes', cursive; */
+  /* font-size: '350%'; */
 }
 .navbar-nav {
   /* float: right; */
@@ -17,6 +20,7 @@
 .nav-link {
   font-size: 1.2rem;
   margin: 0.8rem;
+  text-transform: uppercase;
 }
 
 /* .navbar {
@@ -25,4 +29,21 @@
 .pd {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgb(0, 0, 6);
+  opacity: 1;
+}
+
+.navbar-brand {
+  font-family: 'Great Vibes', cursive;
+  /* font-family: 'Kaushan Script', cursive; */
+  /* font-family: 'Monoton', cursive; */
+  /* font-family: 'Alfa Slab One', cursive; */
+  /* font-family: 'Sacramento', cursive; */
+  /* font-family: 'Handlee', cursive; */
+  /* font-family: 'Ultra', serif; */
+  /* font-family: 'Audiowide', cursive; */
+  /* font-family: 'Fredericka the Great', cursive */
 }

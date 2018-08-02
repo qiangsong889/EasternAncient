@@ -6,8 +6,14 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 class Nav extends React.Component {
   constructor(props) {
     super(props);
+    console.log(this.props);
   }
   handleContentClick(event) {
+    // event.preventDefault();
+    if (this.props.location.pathname !== '/') {
+      console.log('you can direct now');
+      this.props.history.push('/');
+    }
     var target = $(event.target.getAttribute('href'));
     if (target.length) {
       event.preventDefault();
@@ -21,17 +27,22 @@ class Nav extends React.Component {
         );
     }
   }
-  direct(event) {
-    //i dont need this run history push, href will do the same thing
-    // console.log(event.target);
-    // this.props.history.push(event.target.getAttribute('href'));
-  }
+  direct(event) {}
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a className="navbar-brand pd" href="">
+      <nav className="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+        <a
+          className="navbar-brand pd"
+          href="/"
+          style={{
+            display: 'inline-block',
+            fontSize: '250%',
+            color: 'black'
+          }}
+        >
           Z-Spa
         </a>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -46,22 +57,26 @@ class Nav extends React.Component {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto pd">
-            <li className="nav-item ">
-              <a className="nav-link" href="/">
-                Home <span className="sr-only">(current)</span>
+            <li className="nav-item">
+              <a
+                href="#prices"
+                className="nav-link active"
+                onClick={e => this.handleContentClick(e)}
+              >
+                Prices
               </a>
             </li>
             <li className="nav-item">
               <a
-                className="nav-link"
+                className="nav-link active"
                 href="#content"
                 onClick={e => this.handleContentClick(e)}
               >
-                Content
+                Benefits
               </a>
             </li>
-            <li>
-              <a href="/contact" className="nav-link">
+            <li className="nav-item">
+              <a href="/contact" className="nav-link active">
                 Find Us
               </a>
             </li>
