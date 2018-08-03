@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api-server": "cd api && npm run start:rest-server",
+    "ui-server": "cd ui && npm run start:server",
+    "server": "npm run api-server | npm run ui-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/qiangsong889/EasternAncient/issues"
   },
-  "homepage": "https://github.com/qiangsong889/EasternAncient#readme"
+  "homepage": "https://github.com/qiangsong889/EasternAncient#readme",
+  "dependencies": {
+    "npm-run-all": "^4.1.3"
+  }
 }
