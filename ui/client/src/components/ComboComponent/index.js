@@ -47,7 +47,6 @@ class Prices extends React.Component {
           <h5>BODY MASSAGE</h5>
           <p>30 MINS FOR 40$</p>
           <p>60 MINS FOR 60$</p>
-          <p>90 MINS FOR 90$</p>
         </div>
         <div className="price-list">
           <img src={image3} style={style} />

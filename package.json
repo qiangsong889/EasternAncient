@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "api-server": "cd api && npm run start:rest-server",
     "ui-server": "cd ui && npm run start:server",
-    "server": "npm run api-server | npm run ui-server"
+    "start": "npm run api-server | npm run ui-server"
   },
   "repository": {
     "type": "git",

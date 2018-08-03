@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 class Nav extends React.Component {
   constructor(props) {
     super(props);
-    console.log(this.props);
   }
   handleContentClick(event) {
     // event.preventDefault();

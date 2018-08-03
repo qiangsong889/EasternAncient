@@ -18,7 +18,6 @@ class Entry extends React.Component {
           name: 'shayne'
         }
       );
-      console.log(data);
     } catch (err) {
       console.log('err handling click');
     }
