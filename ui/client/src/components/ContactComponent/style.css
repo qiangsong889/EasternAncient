@@ -17,3 +17,9 @@
   width: 30vw;
   display: inline-block;
 }
+
+@media screen and (max-width: 1024px) {
+  #contact {
+    margin-top: 30%;
+  }
+}

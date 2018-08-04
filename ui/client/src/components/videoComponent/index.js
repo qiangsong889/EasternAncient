@@ -47,14 +47,12 @@ class Video extends Component {
       <div>
         <div className="v-header videoContainer">
           <div className="fullscreen-video-wrap">
-            <video
-              name="wmode"
-              value="opaque"
+            {/* <video
               src={video}
               autoPlay
               loop
               muted
-            />
+            /> */}
           </div>
           <div className="header-overlay" />
           <div className="header-content">
